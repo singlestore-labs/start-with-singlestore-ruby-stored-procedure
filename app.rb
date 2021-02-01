@@ -4,7 +4,7 @@ def main
   begin
 
     # TODO: pull from config
-    client = Mysql2::Client.new(:host => "127.0.0.1", :username => "root", :password => "", :database => "acme")
+    client = Mysql2::Client.new(:host => "localhost", :username => "root", :password => "password_here", :database => "acme")
 
     id = create(client, 'Inserted row')
     puts "Inserted row #{id}"
